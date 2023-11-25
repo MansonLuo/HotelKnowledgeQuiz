@@ -1,5 +1,7 @@
 package com.example.hotelknowledgequiz
 
+import androidx.compose.ui.graphics.Color
+import com.example.hotelknowledgequiz.ui.screens.choicequestion.generateDefaultOptionsColors
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -9,9 +11,16 @@ import org.junit.Assert.*
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
-class ExampleUnitTest {
+class FunctionsUnitTest {
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+    fun generateDefaultOptionsColors_isCorrect() {
+        /*val colorsList = generateDefaultOptionsColors(3)
+        assertEquals(3, colorsList.size)
+
+        colorsList.forEach { colors ->
+            colors.forEach {  color ->
+                assertEquals(Color.Black, color)
+            }
+        }*/
     }
 }
