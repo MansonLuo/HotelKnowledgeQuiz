@@ -11,6 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.hotelknowledgequiz.ui.screens.choicequestion.AllChoiceQuestionsUI
+import com.example.hotelknowledgequiz.ui.screens.completionquestion.Preview_CompletionQuestionUI
 import com.example.hotelknowledgequiz.ui.theme.HotelKnowledgeQuizTheme
 
 class MainActivity : ComponentActivity() {
@@ -32,11 +33,12 @@ class MainActivity : ComponentActivity() {
 @Preview
 @Composable
 fun App() {
-    val mainViewModel = viewModel<MainViewModel>()
+    /*val mainViewModel = viewModel<MainViewModel>()
 
     AllChoiceQuestionsUI(
         questions = mainViewModel.questions,
         colorsList = mainViewModel.colorsList,
         onAnswerRevealed = mainViewModel::revealAnswer
-    )
+    )*/
+    Preview_CompletionQuestionUI()
 }
